@@ -1,7 +1,25 @@
+---
+import gameboyGames from "../assets/media/";
+import pokemonCards from "../assets/media/pexels-caleboquendo-7708408.jpg";
+import gameboy from "../assets/media/pexels-bos-navarit-3711248-7578730.jpg";
+import charizard from "../assets/media/pexels-introspectivedsgn-8811594.jpg";
+import pikachu from "../assets/media/pexels-andromeda99-34961688.jpg";
+import bulbasaur from "../assets/media/pexels-abhishek-rana-422784-4188296.jpg";
+---
+
+
 <div class="scroll-container">
     <div class="grid">
         <div class="image">
-        <img src="../assets/" alt="">
+            <img src={} alt="">
+        </div>
+    
+        <div class="image">
+            <img src="../assets/media/" alt="">
+        </div>
+    
+        <div class="image">
+            <img src="../assets/media/" alt="">
         </div>
     
         <div class="image">
@@ -9,23 +27,15 @@
         </div>
     
         <div class="image">
-            <img src="" alt="">
+            <img src="../src/assets/media/pexels-introspectivedsgn-8811594.jpg" alt="">
         </div>
     
         <div class="image">
-            <img src="" alt="">
+            <img src={} alt="pikachu">
         </div>
     
         <div class="image">
-            <img src="" alt="">
-        </div>
-    
-        <div class="image">
-            <img src="" alt="">
-        </div>
-    
-        <div class="image">
-            <img src="" alt="">
+            <img src="../src/assets/media/pexels-abhishek-rana-422784-4188296.jpg" alt="">
         </div>
     </div>
 </div>
@@ -35,3 +45,66 @@
         Hey wat cool!
     </h1>
 </section>
+
+
+<style>
+    body {
+    background: #111;
+    margin: 0;
+    }
+
+    .scroll-container {
+    height: 400svh;
+    overflow: clip;
+    }
+
+    .grid {
+    position: sticky;
+    top: 0;
+
+    padding: 0,5rem; /* Net zo groot als m'n gap */
+    display: grid;
+    gap: 0.5rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+
+    height: calc(100svh - 1rem);
+    padding: 0.5rem;
+    animation-name: enlarge-image;
+    animation-timeline: view();
+    animation-range: entry 100svh contain;
+    animation-fill-mode: both;
+
+    .image {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        border-radius: 0.5rem;
+        overflow: clip;
+        &:nth-of-type(5n + 1),
+        &:nth-of-type(5n + 2),
+        &:nth-of-type(5n + 4) {
+        grid-column: span 2;
+        }
+    
+    img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height:100%;
+        object-fit: cover;
+        }
+    }
+    }
+
+    @keyframes enlarge-image {
+    to {
+        scale: 3.15;
+        }
+    }
+
+    section {
+    
+    }
+</style>
