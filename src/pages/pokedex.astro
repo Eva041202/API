@@ -1,0 +1,10 @@
+---
+import PokemonGrid from "../components/pokemonGrid.astro";
+import {getPokemon} from "../java/pokemon";
+
+const pokemon = await getPokemon();
+---
+
+<h1>Pokedex</h1>
+
+<PokemonGrid pokemon={pokemon}

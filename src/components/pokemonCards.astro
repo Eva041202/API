@@ -1,0 +1,13 @@
+---
+const {pokemon} = Astro.props;
+
+const type = pokemon.types[0].type.name;
+---
+
+<div class="card">
+    <img src={pokemon.sprites.other["official-artwork"].front_default} alt={pokemon.name} />
+
+    <h2>{pokemon.name}</h2>
+
+    <p>{type}</p>
+</div>
