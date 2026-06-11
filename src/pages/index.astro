@@ -1,11 +1,21 @@
 ---
+//@ts-nocheck
 import Scroll_images from "../components/scroll_images.astro";
+import PokemonGrid from "../components/pokemonGrid.astro";
+import { getPokemon } from "../java/pokemon";
+
+const pokemon = await getPokemon();
 ---
 
 <Scroll_images />
+
+<p>Aantal pokemon: {pokemon.length}</p>
 
 <section>
     <h1>
         Pokedex
     </h1>
+
+    <!--Hier laat ik de opgehaalde pokemon zien-->
+    <pokemonGrid pokemon={pokemon} />
 </section>
