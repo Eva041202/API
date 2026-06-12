@@ -1,13 +1,49 @@
 ---
-const {pokemon} = Astro.props;
+// @ts-nocheck
+import { typeColors } from "../java/typeColors";
 
-const type = pokemon.types[0].type.name;
+const { pokemon } = Astro.props;
+
+const mainType = pokemon.types[0].type.name;
+const borderColor = typeColors[mainType];
 ---
 
-<div class="card">
+<div class="poke-card"
+    style={`border-color:${borderColor}`}>
     <img src={pokemon.sprites.other["official-artwork"].front_default} alt={pokemon.name} />
 
     <h2>{pokemon.name}</h2>
 
-    <p>{type}</p>
+    <p>{mainType}</p>
 </div>
+
+<style>
+    .poke-card {
+        background: #e8e8e8;
+        border: 10px solid;
+        border-radius: 20px;
+        padding: 1rem;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        box-sizing: border-box;
+    }
+
+    .poke-card img {
+        width: 180px;
+        height: 180px;
+        object-fit: contain;
+    }
+
+    .poke-card h2 {
+        margin: 0.5rem 0 0;
+        text-transform: capitalize; /*Dit zorgt ervoor dat iedere woordt met een hoofdletter begint*/
+    }
+
+    .poke-card p {
+        margin: 0;
+        text-transform: capitalize;
+    }
+</style>

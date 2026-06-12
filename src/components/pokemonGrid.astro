@@ -2,19 +2,43 @@
 // @ts-nocheck
 import PokemonCard from "./pokemonCards.astro";
 
-const {pokemon} = Astro.props;
+const { pokemon } = Astro.props;
 ---
 
 <div class="pokemon-grid">
-    { pokemon.map((poke) => (<PokemonCard pokemon={poke} />
-        ))
+    { pokemon.map((poke) => (
+        <PokemonCard pokemon={poke} />
+    ))
     }
 </div>
 
 <style>
     .pokemon-grid {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-        gap: 1rem;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1.5rem;
+
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 1rem;
+    }
+
+    /*Responsive*/
+    @media (max-width: 1000px) {
+        .pokemon-grid {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+
+    @media (max-width: 700px) {
+        .pokemon-grid {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    @media (max-width: 500px) {
+        .pokemon-grid {
+            grid-template-columns: 1fr;
+        }
     }
 </style>
