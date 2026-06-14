@@ -41,5 +41,11 @@ Nu kan ik verder met de type kleuren apart zetten in het aparte javascript besta
 Dit wordt dan de achtergrond kleur voor de vakjes waar de pokemons in staan.
 Iedere type pokemon krijgt z'n eigen kleur.
 
+Aparte javascript gemaakt voor het ophalen van de gameconsoles.
+Hierin slug gebruikt. Slug is een soort korte naam voor een link.
+
+Daarna in components een gameCard.astro voor de verschillende "kaarten" voor de games.
+https://www.pexels.com/ en https://unsplash.com/ en https://pixabay.com/ voor de free photos
+
 Bronnenlijst:
 Hericons (2020). Geraadpleegd op 12-06-26 van <a href="https://heroicons.com/">
