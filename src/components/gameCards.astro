@@ -2,11 +2,13 @@
 const { game } = Astro.props;
 ---
 
-<div class="game-card">
-    <img src={game.image} alt={game.name} />
+<a href={`/games/${game.slug}`}>
+    <div class="game-card">
+        <img src={game.image} alt={game.name} />
 
-    <h2>{game.name}</h2>
-</div>
+        <h2>{game.name}</h2>
+    </div>
+</a>
 
 <style>
     .game-card {

@@ -1,5 +1,6 @@
 ---
 import GameCards from "../components/gameCards.astro";
+import GameGrid from "../components/gameGrid.astro";
 import { gameConsoles } from "../java/gameConsoles";
 ---
 
@@ -27,6 +28,8 @@ import { gameConsoles } from "../java/gameConsoles";
         </div>
     </div>
 </section>
+
+<GameGrid games={gameConsoles} />
 
 <style>
     /*Knoppen in navigatiebar*/

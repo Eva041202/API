@@ -1,0 +1,25 @@
+---
+// @ts-nocheck
+import GameCards from "./gameCards.astro";
+
+const { games } = Astro.props;
+---
+
+<div class="game-grid">
+    {
+        games.map((game) => (
+            <GameCards game={game} />
+        ))
+    }
+</div>
+
+<style>
+    .game-grid {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+
+        gap: 2rem;
+        max-width: 1200px;
+        margin: auto;
+    }
+</style>
