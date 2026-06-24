@@ -52,6 +52,9 @@ In componenten een gameGrid aangemaakt voor de grid van de games.
 
 Een aparte javascript bestand gemaakt voor de verschillende games die bij de gameconsoles horen.
 
+Onder pages een folder gemaakt "games".
+Hierin komen de verschillende pagina's voor de games.
+
 # Bronnenlijst:
 Hericons (2020). Geraadpleegd van <a href="https://heroicons.com/">
 Pexels (2014). Geraadpleegd van <a href="https://www.pexels.com/">
