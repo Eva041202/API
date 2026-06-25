@@ -1,7 +1,7 @@
 // @ts-nocheck
 //Gameboy
 import red from "../assets/media/pokemonGames/gameboyGames/red.png";
-import green from "";
+// import green from "";
 import blue from "../assets/media/pokemonGames/gameboyGames/blue.png";
 import yellow from "../assets/media/pokemonGames/gameboyGames/yellow.png";
 import tcg from "../assets/media/pokemonGames/gameboyGames/tcg.png";
@@ -10,7 +10,7 @@ import gold from "../assets/media/pokemonGames/gameboyGames/gold.png";
 import silver from "../assets/media/pokemonGames/gameboyGames/silver.png";
 import puzzleChallenge from "../assets/media/pokemonGames/gameboyGames/puzzle-challenge.png";
 import crystal from "../assets/media/pokemonGames/gameboyGames/crystal.png";
-import tcg2 from "";
+// import tcg2 from "";
 import ruby from "../assets/media/pokemonGames/gameboyGames/ruby.png";
 import sapphire from "../assets/media/pokemonGames/gameboyGames/sapphire.png";
 import fireRed from "../assets/media/pokemonGames/gameboyGames/fire-red.png";
@@ -19,39 +19,38 @@ import emerald from "../assets/media/pokemonGames/gameboyGames/emerald.png";
 import mysteryDungeonredTeam from "../assets/media/pokemonGames/gameboyGames/mystery-dungeon.png";
 
 //Nintendo 64
-import pocketMonstersStadium from "";
-import heyYouPikacu from "";
-import stadium from "";
-import snap from "";
-import stadium2 from "";
-import puzzleLeague from "";
+// import heyYouPikacu from "";
+import stadium from "../assets/media/pokemonGames/nintendo64Games/stadium.png";
+import snap from "../assets/media/pokemonGames/nintendo64Games/snap.png";
+import stadium2 from "../assets/media/pokemonGames/nintendo64Games/stadium2.png";
+import puzzleLeague from "../assets/media/pokemonGames/nintendo64Games/puzzle-league.png";
 
 //Game Cube
-import boxRubySapphire from "";
-import channel from "";
-import colosseum from "";
-import xdGaleOfDarkness from "";
+import boxRubySapphire from "../assets/media/pokemonGames/gamecubeGames/box-ruby-and-sapphire.png";
+import channel from "../assets/media/pokemonGames/gamecubeGames/channel.png";
+import colosseum from "../assets/media/pokemonGames/gamecubeGames/colosseum.png";
+import xdGaleOfDarkness from "../assets/media/pokemonGames/gamecubeGames/xd-gale-of-darkness.png";
 
 //DS
 import dash from "../assets/media/pokemonGames/dsGames/dash.png";
-import trozei from "";
-import mysteryDungeonBlueTeam from "";
-import ranger from "";
-import diamond from "";
-import pearl from "";
-import mysteryExplorersOfDarkness from "";
-import mysteryExplorersOfTime from "";
-import platinum from "";
-import mysteryExplorersOfSky from "";
-import heartgold from "";
-import soulsilver from "";
-import rangerGuardianSigns from "";
-import black from "";
-import white from "";
-import typingAdventure from "";
-import conquest from "";
-import black2 from "";
-import white2 from "";
+// import trozei from "";
+import mysteryDungeonBlueTeam from "../assets/media/pokemonGames/dsGames/mystery-dungeon-blue-rescue-team.png";
+import ranger from "../assets/media/pokemonGames/dsGames/ranger.png";
+import diamond from "../assets/media/pokemonGames/dsGames/diamond.png";
+import pearl from "../assets/media/pokemonGames/dsGames/pearl.png";
+import mysteryExplorersOfDarkness from "../assets/media/pokemonGames/dsGames/mystery-dungeon-explorers-of-darkness.png";
+import mysteryExplorersOfTime from "../assets/media/pokemonGames/dsGames/mystery-dungeon-explorers-of-time.png";
+import platinum from "../assets/media/pokemonGames/dsGames/platinum.png";
+import mysteryExplorersOfSky from "../assets/media/pokemonGames/dsGames/mystery-dungeon-explorers-of-sky.png";
+import heartgold from "../assets/media/pokemonGames/dsGames/heartgold.png";
+import soulsilver from "../assets/media/pokemonGames/dsGames/soulsilver.png";
+import rangerGuardianSigns from "../assets/media/pokemonGames/dsGames/ranger-guardian-signs.png";
+import black from "../assets/media/pokemonGames/dsGames/black.png";
+import white from "../assets/media/pokemonGames/dsGames/white.png";
+import typingAdventure from "../assets/media/pokemonGames/dsGames/typing-adventure.png";
+import conquest from "../assets/media/pokemonGames/dsGames/conquest.png";
+import black2 from "../assets/media/pokemonGames/dsGames/black2.png";
+import white2 from "../assets/media/pokemonGames/dsGames/white2.png";
 
 
 //3DS
@@ -205,11 +204,6 @@ export const pokemonGames = {
 
     nintendo64: [
         {
-            name: "Pocket Monsters Stadium",
-            image: pocketMonstersStadium,
-            releaseDate: "01-08-1998"
-        },
-        {
             name: "Hey you, Pikachu!",
             image: heyYouPikachu,
             releaseDate: "12-12-1998"
@@ -270,7 +264,7 @@ export const pokemonGames = {
             releaseDate: "20-10-2005"
         },
         {
-            name: "Pokemon Mystery Dungeon Blue Team",
+            name: "Pokemon Mystery Dungeon Blue Rescue Team",
             image: mysteryDungeonBlueTeam,
             releaseDate: "nov 2005"
         },
