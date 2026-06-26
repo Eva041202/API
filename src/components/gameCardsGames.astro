@@ -1,0 +1,32 @@
+---
+const { game } = Astro.props;
+---
+
+<div class="game-card">
+    <img src={game.image.src} alt={game.name} />
+
+    <div class="info-game">
+        <h2>{game.name}</h2>
+        <p>{game.releaseDate}</p>
+    </div>
+</div>
+
+<style>
+    .game-card {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        padding: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .game-card img {
+        width: 150px;
+        border-radius: 12px;
+    }
+
+    .info-game {
+        display: flex;
+        flex-direction: column;
+    }
+</style>

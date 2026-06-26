@@ -1,7 +1,7 @@
 // @ts-nocheck
 //Gameboy
 import red from "../assets/media/pokemonGames/gameboyGames/red.png";
-// import green from "";
+import green from "../assets/media/pokemonGames/gameboyGames/green.png";
 import blue from "../assets/media/pokemonGames/gameboyGames/blue.png";
 import yellow from "../assets/media/pokemonGames/gameboyGames/yellow.png";
 import tcg from "../assets/media/pokemonGames/gameboyGames/tcg.png";
@@ -10,16 +10,16 @@ import gold from "../assets/media/pokemonGames/gameboyGames/gold.png";
 import silver from "../assets/media/pokemonGames/gameboyGames/silver.png";
 import puzzleChallenge from "../assets/media/pokemonGames/gameboyGames/puzzle-challenge.png";
 import crystal from "../assets/media/pokemonGames/gameboyGames/crystal.png";
-// import tcg2 from "";
+import tcg2 from "../assets/media/pokemonGames/gameboyGames/tcg2.png";
 import ruby from "../assets/media/pokemonGames/gameboyGames/ruby.png";
 import sapphire from "../assets/media/pokemonGames/gameboyGames/sapphire.png";
 import fireRed from "../assets/media/pokemonGames/gameboyGames/fire-red.png";
 import leafGreen from "../assets/media/pokemonGames/gameboyGames/leaf-green.png";
 import emerald from "../assets/media/pokemonGames/gameboyGames/emerald.png";
-import mysteryDungeonredTeam from "../assets/media/pokemonGames/gameboyGames/mystery-dungeon.png";
+import mysteryDungeonRedTeam from "../assets/media/pokemonGames/gameboyGames/mystery-dungeon.png";
 
 //Nintendo 64
-// import heyYouPikacu from "";
+import heyYouPikachu from "../assets/media/pokemonGames/nintendo64Games/hey-you-pikachu.png";
 import stadium from "../assets/media/pokemonGames/nintendo64Games/stadium.png";
 import snap from "../assets/media/pokemonGames/nintendo64Games/snap.png";
 import stadium2 from "../assets/media/pokemonGames/nintendo64Games/stadium2.png";
@@ -33,7 +33,7 @@ import xdGaleOfDarkness from "../assets/media/pokemonGames/gamecubeGames/xd-gale
 
 //DS
 import dash from "../assets/media/pokemonGames/dsGames/dash.png";
-// import trozei from "";
+import trozei from "../assets/media/pokemonGames/dsGames/trozei.png";
 import mysteryDungeonBlueTeam from "../assets/media/pokemonGames/dsGames/mystery-dungeon-blue-rescue-team.png";
 import ranger from "../assets/media/pokemonGames/dsGames/ranger.png";
 import diamond from "../assets/media/pokemonGames/dsGames/diamond.png";
@@ -54,20 +54,20 @@ import white2 from "../assets/media/pokemonGames/dsGames/white2.png";
 
 
 //3DS
-// import pokedex3d from "";
+import pokedex3d from "../assets/media/test.png";
 import superPokemonRumble from "../assets/media/pokemonGames/3dsGames/super-pokemon-rumble.png";
-// import dreamRadar from "";
+import dreamRadar from "../assets/media/test.png";
 import mysteryDungeonGatesToInfinity from "../assets/media/pokemonGames/3dsGames/mystery-dungeon-gates-to-infinity.png";
 import x from "../assets/media/pokemonGames/3dsGames/x.png";
 import y from "../assets/media/pokemonGames/3dsGames/y.png";
-// import battleTrozei from "";
+import battleTrozei from "../assets/media/test.png";
 import artAcademy from "../assets/media/pokemonGames/3dsGames/art-academy.png";
 import alphaSapphire from "../assets/media/pokemonGames/3dsGames/alpha-sapphire.png";
 import omegaRuby from "../assets/media/pokemonGames//3dsGames/omega-ruby.png";
-// import shuffle from "";
+import shuffle from "../assets/media/test.png";
 import rumbleWorld from "../assets/media/pokemonGames/3dsGames/rumble-world.png";
 import superMysteryDungeon from "../assets/media/pokemonGames/3dsGames/super-mystery-dungeon.png";
-// import picross from "";
+import picross from "../assets/media/test.png";
 import detectivePikachu from "../assets/media/pokemonGames/3dsGames/detective-pikachu.png";
 import moon from "../assets/media/pokemonGames/3dsGames/moon.png";
 import sun from "../assets/media/pokemonGames/3dsGames/sun.png";
@@ -76,27 +76,24 @@ import ultraSun from "../assets/media/pokemonGames/3dsGames/ultra-sun.png";
 
 //Wii
 import battleRevolution from "../assets/media/pokemonGames/wiiGames/battle-revolution.png";
-// import ranch from "";
-// import rumble from "";
-// import ikozu from "";
-// import mezase from "";
-// import susume from "";
+import ranch from "../assets/media/test.png";
+import rumble from "../assets/media/test.png";
 import pokeparkPikachusAdventure from "../assets/media/pokemonGames/wiiGames/pokepark-pikachus-adventure.png";
 import pokepark2WondersBeyond from "../assets/media/pokemonGames/wiiGames/pokepark2-wonders-beyond.png";
 
 //Wii U
-// import rumbleU from "";
+import rumbleU from "../assets/media/test.png";
 import pokkenTournament from "../assets/media/pokemonGames/wiiuGames/pokken-tournament.png";
 
 //Switch
 import pokkenTournamentDx from "../assets/media/pokemonGames/switchGames/pokken-tournament-dx.png";
-// import pokemonQuest from "";
+import pokemonQuest from "../assets/media/test.png";
 import letsGoPikachu from "../assets/media/pokemonGames/switchGames/lets-go-pikachu.png";
 import letsGoEevee from "../assets/media/pokemonGames/switchGames/lets-go-eevee.png";
 import sword from "../assets/media/pokemonGames/switchGames/sword.png";
 import shield from "../assets/media/pokemonGames/switchGames/shield.png";
 import mysteryRescueTeamDx from "../assets/media/pokemonGames/switchGames/mystery-rescue-team-dx.png";
-// import cafeMix from "";
+import cafeMix from "../assets/media/test.png";
 import newSnap from "../assets/media/pokemonGames/switchGames/new-pokemon-snap.png";
 import brilliantDiamond from "../assets/media/pokemonGames/switchGames/brilliant-diamond.png";
 import shiningPearl from "../assets/media/pokemonGames/switchGames/shining-pearl.png";
@@ -104,13 +101,13 @@ import legendsArceus from "../assets/media/pokemonGames/switchGames/legends-arce
 import scarlet from "../assets/media/pokemonGames/switchGames/scarlet.png";
 import violet from "../assets/media/pokemonGames/switchGames/violet.png";
 import detectivePikachuReturns from "../assets/media/pokemonGames/switchGames/detective-pikachu-returns.png";
-// import friends from "";
+import friends from "../assets/media/test.png";
 import legendsZa from "../assets/media/pokemonGames/switchGames/legends za.png";
 
 //Switch 2
 import legendsZa2 from "../assets/media/pokemonGames/switch2Games/legends za2.png";
 import pokopia from "../assets/media/pokemonGames/switch2Games/pokopia.png";
-// import champions from "";
+import champions from "../assets/media/test.png";
 
 
 export const pokemonGames = {
@@ -393,7 +390,7 @@ export const pokemonGames = {
         },
         {
             name: "Alpha Sapphire",
-            image: aplhaSapphire,
+            image: alphaSapphire,
             releaseDate: "nov 2014"
         },
         {
@@ -463,21 +460,6 @@ export const pokemonGames = {
             name: "Pokemon Rumble",
             image: rumble,
             releaseDate: "16-06-2009"
-        },
-        {
-            name: "Fushi no Dungeon: Ikozu!",
-            image: ikozu,
-            releaseDate: "04-08-2009"
-        },
-        {
-            name: "Fushi no Dungeon: Mezase!",
-            image: mezase,
-            releaseDate: "04-08-2009"
-        },
-        {
-            name: "Fushi no Dungeon: Susume!",
-            image: susume,
-            releaseDate: "04-08-2009"
         },
         {
             name: "Pokepark Pikachu's Adventure",

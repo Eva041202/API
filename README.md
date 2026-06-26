@@ -55,6 +55,8 @@ Een aparte javascript bestand gemaakt voor de verschillende games die bij de gam
 Onder pages een folder gemaakt "games".
 Hierin komen de verschillende pagina's voor de games.
 
+Een nieuw component gemaakt voor de games. Deze lijkt op gameCards.astro, maar toch net anders waardoor ik een aparte component heb gemaakt.
+
 # Bronnenlijst:
 Hericons (2020). Geraadpleegd van <a href="https://heroicons.com/">
 Pexels (2014). Geraadpleegd van <a href="https://www.pexels.com/">
