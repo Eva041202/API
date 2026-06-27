@@ -15,7 +15,7 @@ import { gameConsoles } from "../java/gameConsoles";
             <a href="/">Pokedex</a>
             <a href="/games">Games</a>
             <a href="/teams">Teams</a>
-            <button>Light / Dark</button>
+            <button class="theme-toggle">Light / Dark</button>
         </div>
     </div>
 
@@ -38,18 +38,25 @@ import { gameConsoles } from "../java/gameConsoles";
 
 <style>
     .back {
+        position: relative;
         display: flex;
+        justify-content: center;
         align-items: center;
-        gap: 2rem;
         max-width: 1200px;
         margin: 2rem auto;
+    }
+
+    .back :global(.back-button) {
+        position: absolute;
+        left: 0;
     }
 
     /*Knoppen in navigatiebar*/
     .navigation {
         display: flex;
-        flex: 1;
+        width: 70%;
         gap: 1rem;
+        margin-left: 4rem;
     }
 
     .navigation a, .navigation button {

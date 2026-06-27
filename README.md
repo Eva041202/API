@@ -64,6 +64,7 @@ In pokemonGames.js geef ik alle games ook een slug, zodat ik hier later op kan k
 ## Teams
 
 ## Pikachu confetti
+Omdat ik een button heb voor de light/dark moet ik die een functie geven in javascript. Dus ik heb een apart javascript bestand gemaakt voor deze modus.
 
 ## Dark / light
 

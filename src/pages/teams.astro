@@ -2,16 +2,18 @@
 import BackButton from "../components/backButton.astro";
 ---
 
-<BackButton href="/" />
-
 <section>
     <h1>Teams</h1>
 
-    <div class="navigation">
-        <a href="/">Pokedex</a>
-        <a href="/games">Games</a>
-        <a href="/teams">Teams</a>
-        <button>Light / Dark</button>
+    <div class="back">
+        <BackButton href="/games" />
+
+        <div class="navigation">
+            <a href="/">Pokedex</a>
+            <a href="/games">Games</a>
+            <a href="/teams">Teams</a>
+            <button class="theme-toggle">Light / Dark</button>
+        </div>
     </div>
 
     <div class="search-bar">
@@ -30,15 +32,26 @@ import BackButton from "../components/backButton.astro";
 </section>
 
 <style>
+    .back {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 1200px;
+        margin: 2rem auto;
+    }
+
+    .back :global(.back-button) {
+        position: absolute;
+        left: 0;
+    }
+
     /*Knoppen in navigatiebar*/
     .navigation {
         display: flex;
-        justify-content: space-between;
         width: 70%;
-        max-width: 900px;
-
         gap: 1rem;
-        margin: 2rem auto;
+        margin-left: 4rem;
     }
 
     .navigation a, .navigation button {

@@ -16,7 +16,7 @@ const pokemon = await getPokemon();
         <a href="/">Pokedex</a>
         <a href="/games">Games</a>
         <a href="/teams">Teams</a>
-        <button>Light / Dark</button>
+        <button class="theme=toggle">Light / Dark</button>
     </div>
 
     <div class="search-bar">
@@ -37,7 +37,13 @@ const pokemon = await getPokemon();
     <PokemonGrid pokemon={pokemon} />
 </section>
 
+<script src="/src/java/thema.js"></script>
+
 <style>
+    body.dark-mode {
+        background: #111;
+    }
+
     /*Knoppen in navigatiebar*/
     .navigation {
         display: flex;
@@ -101,3 +107,4 @@ const pokemon = await getPokemon();
         height: 24px;
     }
 </style>
+
