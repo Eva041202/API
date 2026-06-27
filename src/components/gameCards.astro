@@ -2,7 +2,7 @@
 const { game } = Astro.props;
 ---
 
-<a href={`/games/${game.slug}`}>
+<a href={`/games/${game.slug}`} class="game-link">
     <div class="game-card">
         <img src={game.image.src} alt={game.name} />
 
@@ -11,6 +11,11 @@ const { game } = Astro.props;
 </a>
 
 <style>
+    .game-link {
+        color: black;
+        text-decoration: none;
+    }
+
     .game-card {
         display: flex;
         flex-direction: column;
