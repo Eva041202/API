@@ -1,4 +1,5 @@
 ---
+import BackButton from "../components/backButton.astro";
 import GameCards from "../components/gameCards.astro";
 import GameGrid from "../components/gameGrid.astro";
 import { gameConsoles } from "../java/gameConsoles";
@@ -7,11 +8,15 @@ import { gameConsoles } from "../java/gameConsoles";
 <section>
     <h1>Games</h1>
 
-    <div class="navigation">
-        <button>Pokedex</button>
-        <button>Games</button>
-        <button>Teams</button>
-        <button>Light / Dark</button>
+    <div class="back">
+        <BackButton href="/" />
+
+        <div class="navigation">
+            <a href="/">Pokedex</a>
+            <a href="/games">Games</a>
+            <a href="/teams">Teams</a>
+            <button>Light / Dark</button>
+        </div>
     </div>
 
     <div class="search-bar">
@@ -32,18 +37,22 @@ import { gameConsoles } from "../java/gameConsoles";
 <GameGrid games={gameConsoles} />
 
 <style>
-    /*Knoppen in navigatiebar*/
-    .navigation {
+    .back {
         display: flex;
-        justify-content: space-between;
-        width: 70%;
-        max-width: 900px;
-
-        gap: 1rem;
+        align-items: center;
+        gap: 2rem;
+        max-width: 1200px;
         margin: 2rem auto;
     }
 
-    .navigation button {
+    /*Knoppen in navigatiebar*/
+    .navigation {
+        display: flex;
+        flex: 1;
+        gap: 1rem;
+    }
+
+    .navigation a, .navigation button {
         flex: 1;
         background: #d9d9d9;
         border: none;

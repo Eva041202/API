@@ -32,7 +32,7 @@ export const gameConsoles = [
     {
         name: "3DS games",
         image: ds3,
-        slug: "3ds"
+        slug: "ds3"
     },
     {
         name: "Wii games",

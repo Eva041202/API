@@ -1,10 +1,16 @@
+---
+import BackButton from "../components/backButton.astro";
+---
+
+<BackButton href="/" />
+
 <section>
     <h1>Teams</h1>
 
     <div class="navigation">
-        <button>Pokedex</button>
-        <button>Games</button>
-        <button>Teams</button>
+        <a href="/">Pokedex</a>
+        <a href="/games">Games</a>
+        <a href="/teams">Teams</a>
         <button>Light / Dark</button>
     </div>
 
@@ -35,7 +41,7 @@
         margin: 2rem auto;
     }
 
-    .navigation button {
+    .navigation a, .navigation button {
         flex: 1;
         background: #d9d9d9;
         border: none;

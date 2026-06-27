@@ -57,6 +57,20 @@ Hierin komen de verschillende pagina's voor de games.
 
 Een nieuw component gemaakt voor de games. Deze lijkt op gameCards.astro, maar toch net anders waardoor ik een aparte component heb gemaakt.
 
+Voor iedere gameconsole een aparte .astro gemaakt in pages.
+
+In pokemonGames.js geef ik alle games ook een slug, zodat ik hier later op kan klikken voor pagina's met informatie over de games.
+
+## Teams
+
+## Pikachu confetti
+
+## Dark / light
+
+## Overig
+Ik heb voor de terug knop een apart component gemaakt, zodat dit makkelijk overal te zetten is.
+Dit had ik waarschijnlijk ook kunnen doen voor de knoppen en zoekbalk, maar wat ik nu heb werkt.
+
 # Bronnenlijst:
 Hericons (2020). Geraadpleegd van <a href="https://heroicons.com/">
 Pexels (2014). Geraadpleegd van <a href="https://www.pexels.com/">

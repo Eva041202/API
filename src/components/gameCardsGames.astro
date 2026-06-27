@@ -2,31 +2,42 @@
 const { game } = Astro.props;
 ---
 
-<div class="game-card">
+<a href={`/games/gameboy/${game.slug}`} class="game-card">
     <img src={game.image.src} alt={game.name} />
 
     <div class="info-game">
         <h2>{game.name}</h2>
         <p>{game.releaseDate}</p>
     </div>
-</div>
+</a>
 
 <style>
     .game-card {
         display: flex;
+        flex-direction: column;
         align-items: center;
-        gap: 2rem;
-        padding: 1rem;
-        margin-bottom: 1rem;
+        text-align: center;
     }
 
     .game-card img {
-        width: 150px;
-        border-radius: 12px;
+        width: 100%;
+        max-width: 200px;
+        max-height: 200px;
+        object-fit: contain;
+        border-radius: 20px;
     }
 
     .info-game {
         display: flex;
         flex-direction: column;
+    }
+
+    .info-game h2 {
+        margin: 0;
+        font-size: 1.5rem;
+    }
+
+    .info-game p {
+        margin-top: .5rem;
     }
 </style>
