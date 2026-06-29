@@ -162,7 +162,7 @@ export const pokemonGames = {
         },
         {
             name: "Pokemon Puzzle Challenge",
-            slug: "puzzle",
+            slug: "puzzlechallenge",
             image: puzzleChallenge,
             releaseDate: "2000"
         },
@@ -251,7 +251,7 @@ export const pokemonGames = {
 
     gameCube: [
         {
-            name: "Box Ruby & Sapphire",
+            name: "Pokemon Box Ruby & Sapphire",
             slug: "rubysapphire",
             image: boxRubySapphire,
             releaseDate: "30-05-2003"
@@ -269,7 +269,7 @@ export const pokemonGames = {
             releaseDate: "21-11-2003"
         },
         {
-            name: "XD Gale of Darkness",
+            name: "Pokemon XD Gale of Darkness",
             slug: "galeofdarkness",
             image: xdGaleOfDarkness,
             releaseDate: "04-08-2005"
@@ -406,7 +406,7 @@ export const pokemonGames = {
             releaseDate: "11-08-2011"
         },
         {
-            name: "Dream Radar",
+            name: "Pokemon Dream Radar",
             slug: "dreamradar",
             image: dreamRadar,
             releaseDate: "23-06-2012"
@@ -454,7 +454,7 @@ export const pokemonGames = {
             releaseDate: "nov 2014"
         },
         {
-            name: "Shuffle",
+            name: "Pokemon Shuffle",
             slug: "shuffle",
             image: shuffle,
             releaseDate: "18-02-2015"
@@ -517,7 +517,7 @@ export const pokemonGames = {
             releaseDate: "14-12-2006"
         },
         {
-            name: "Ranch",
+            name: "Pokemon Ranch",
             slug: "ranch",
             image: ranch,
             releaseDate: "2008"
@@ -601,7 +601,7 @@ export const pokemonGames = {
             releaseDate: "06-03-2020"
         },
         {
-            name: "Pokemon Café Mix",
+            name: "Pokemon Cafe Mix",
             slug: "cafemix",
             image: cafeMix,
             releaseDate: "23-06-2020"

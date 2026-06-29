@@ -23,7 +23,7 @@ const games = pokemonGames.nintendo64;
 
     <div class="search-bar">
         <div class="search-box">
-            <input type="text" placeholder="search..." />
+            <input class="search-input" type="text" placeholder="search..." />
 
             <span class="magnifying-glass">
                 <!--SVG heeft geen vaste grootte gekregen. De class="size-6" die het heeft gekregen komt uit Tailwind CSS. Omdat ik gewone CSS gebruik doet het niks.
@@ -36,6 +36,9 @@ const games = pokemonGames.nintendo64;
     </div>
 </section>
 
+    <!--Canvas API -->
+    <canvas id="confetti"></canvas>
+
 <div class="games">
     { games.map((game) => (
         <GameCardsGames game={game} />
@@ -44,6 +47,8 @@ const games = pokemonGames.nintendo64;
 </div>
 
 <script src="../../java/thema.js"></script>
+<script src="../../java/search.js"></script>
+<script src="../../java/navigatie.js"></script>
 
 <style>
     body.dark-mode {
@@ -134,5 +139,13 @@ const games = pokemonGames.nintendo64;
         gap: 2rem;
         max-width: 1000px;
         margin: 2rem auto;
+    }
+
+    /*Confetti*/
+    #confetti {
+        position: fixed;
+        inset: 0;
+        pointer-events: none;
+        z-index: 9999;
     }
 </style>

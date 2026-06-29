@@ -62,18 +62,32 @@ Voor iedere gameconsole een aparte .astro gemaakt in pages.
 In pokemonGames.js geef ik alle games ook een slug, zodat ik hier later op kan klikken voor pagina's met informatie over de games.
 
 ## Teams
+Een teams.astro gemaakt.
+Hier gebruik ik de drag&drop API. Daar maak ik een apart javascript bestand voor.
+
+De pokemons heb ik eerder opgehaald met de pokeapi, dus die heb ik al.
+Ik haal ze nu weer op en maak daar kaartjes van.
+
+Daaronder maak ik met een div een kader waar de teams in gesleept kunnen worden.
 
 ## Pikachu confetti
-Omdat ik een button heb voor de light/dark moet ik die een functie geven in javascript. Dus ik heb een apart javascript bestand gemaakt voor deze modus.
+Voor de pikachu confetti heb ik een apart javascript bestand. (confetti.js)
+Bron: https://press.pokemon.com/en/Pokemon-30th-Celebration-Teaser
 
 ## Dark / light
+Voor de dark/light knop heb ik een apart javascript bestand gemaakt.
+Deze roep ik op de pagina's op waar ik de functie wil laten werken.
+In css benoem ik welke kleuren er in de dark mode moeten zijn.
 
 ## Overig
 Ik heb voor de terug knop een apart component gemaakt, zodat dit makkelijk overal te zetten is.
 Dit had ik waarschijnlijk ook kunnen doen voor de knoppen en zoekbalk, maar wat ik nu heb werkt.
+
+Voor de zoekbalk maak ik een aparte javascript.
 
 # Bronnenlijst:
 Hericons (2020). Geraadpleegd van <a href="https://heroicons.com/">
 Pexels (2014). Geraadpleegd van <a href="https://www.pexels.com/">
 Unsplash (2013). Geraadpleegd van <a href="https://unsplash.com/">
 Pixabay (2010). Geraadpleegd van <a href="https://pixabay.com/">
+Pokemon (2019). Geraadpleegd van <a href="https://press.pokemon.com/en/Pokemon-30th-Celebration-Teaser">

@@ -1,5 +1,10 @@
 ---
+// @ts-nocheck
 import BackButton from "../components/backButton.astro";
+import PokemonCard from "../components/pokemonCards.astro";
+import { getPokemon } from "../java/pokemon";
+
+const pokemon = await getPokemon();
 ---
 
 <section>
@@ -18,7 +23,7 @@ import BackButton from "../components/backButton.astro";
 
     <div class="search-bar">
         <div class="search-box">
-            <input type="text" placeholder="search..." />
+            <input class="search-input" type="text" placeholder="search..." />
 
             <span class="magnifying-glass">
                 <!--SVG heeft geen vaste grootte gekregen. De class="size-6" die het heeft gekregen komt uit Tailwind CSS. Omdat ik gewone CSS gebruik doet het niks.
@@ -31,7 +36,27 @@ import BackButton from "../components/backButton.astro";
     </div>
 </section>
 
+    <!--Canvas API -->
+    <canvas id="confetti"></canvas>
+
 <script src="../java/thema.js"></script>
+<script src="../java/search.js"></script>
+<script src="../java/navigatie.js"></script>
+
+<div class="pokemon-list">
+    { pokemon.map((poke) => (
+        <div class="pokemon-card" draggable="true" data-name={poke.name}>
+            <PokemonCard pokemon={poke} />
+        </div>
+        ))
+    }
+</div>
+
+<div id="team" class="team-area">
+    
+</div>
+
+<script src="../java/dragdrop.js"></script>
 
 <style>
     body.dark-mode {
@@ -114,5 +139,43 @@ import BackButton from "../components/backButton.astro";
     .search-icon {
         width: 24px;
         height: 24px;
+    }
+
+    /*De opgehaalde pokemons*/
+    .pokemon-list {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1rem;
+
+        width: 1000px;
+        height: 600px;
+        margin: auto;
+        padding: 1rem;
+        overflow-y: scroll;
+    }
+
+    /*Vak voor de teams*/
+    .team-area {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+
+        width: 900px;
+        min-height: 250px;
+        gap: 1rem;
+
+        margin: auto;
+        margin-top: 2rem;
+        padding: 2rem;
+
+        border: 4px dashed gray;
+        border-radius: 20px;
+    }
+
+    /*Confetti*/
+    #confetti {
+        position: fixed;
+        inset: 0;
+        pointer-events: none;
+        z-index: 9999;
     }
 </style>

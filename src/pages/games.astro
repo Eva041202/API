@@ -18,10 +18,11 @@ import { gameConsoles } from "../java/gameConsoles";
             <button class="theme-toggle">Light / Dark</button>
         </div>
     </div>
+    
 
     <div class="search-bar">
         <div class="search-box">
-            <input type="text" placeholder="search..." />
+            <input class="search-input" type="text" placeholder="search..." />
 
             <span class="magnifying-glass">
                 <!--SVG heeft geen vaste grootte gekregen. De class="size-6" die het heeft gekregen komt uit Tailwind CSS. Omdat ik gewone CSS gebruik doet het niks.
@@ -34,9 +35,14 @@ import { gameConsoles } from "../java/gameConsoles";
     </div>
 </section>
 
+    <!--Canvas API -->
+    <canvas id="confetti"></canvas>
+
 <GameGrid games={gameConsoles} />
 
 <script src="../java/thema.js"></script>
+<script src="../java/search.js"></script>
+<script src="../java/navigatie.js"></script>
 
 <style>
     body.dark-mode {
@@ -119,5 +125,13 @@ import { gameConsoles } from "../java/gameConsoles";
     .search-icon {
         width: 24px;
         height: 24px;
+    }
+
+    /*Confetti*/
+    #confetti {
+        position: fixed;
+        inset: 0;
+        pointer-events: none;
+        z-index: 9999;
     }
 </style>

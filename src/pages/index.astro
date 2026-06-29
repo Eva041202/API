@@ -21,7 +21,7 @@ const pokemon = await getPokemon();
 
     <div class="search-bar">
         <div class="search-box">
-            <input type="text" placeholder="search..." />
+            <input class="search-input" type="text" placeholder="search..." />
 
             <span class="magnifying-glass">
                 <!--SVG heeft geen vaste grootte gekregen. De class="size-6" die het heeft gekregen komt uit Tailwind CSS. Omdat ik gewone CSS gebruik doet het niks.
@@ -33,11 +33,16 @@ const pokemon = await getPokemon();
         </div>
     </div>
 
+    <!--Canvas API -->
+    <canvas id="confetti"></canvas>
+
     <!--Hier laat ik de opgehaalde pokemon zien-->
     <PokemonGrid pokemon={pokemon} />
 </section>
 
 <script src="../java/thema.js"></script>
+<script src="../java/search.js"></script>
+<script src="../java/navigatie.js"></script>
 
 <style>
     body.dark-mode {
@@ -109,6 +114,14 @@ const pokemon = await getPokemon();
     .search-icon {
         width: 24px;
         height: 24px;
+    }
+
+    /*Confetti*/
+    #confetti {
+        position: fixed;
+        inset: 0;
+        pointer-events: none;
+        z-index: 9999;
     }
 </style>
 
