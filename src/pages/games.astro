@@ -6,8 +6,6 @@ import { gameConsoles } from "../java/gameConsoles";
 ---
 
 <section>
-    <h1>Games</h1>
-
     <div class="back">
         <BackButton href="/" />
 
@@ -45,6 +43,10 @@ import { gameConsoles } from "../java/gameConsoles";
 <script src="../java/navigatie.js"></script>
 
 <style>
+    * {
+        font-family: sans-serif;
+    }
+
     body.dark-mode {
         background: black;
     }
@@ -85,6 +87,9 @@ import { gameConsoles } from "../java/gameConsoles";
         font-size: 1rem;
         font-weight: bold;
         cursor: pointer;
+
+        color: black;
+        text-decoration: none;
     }
 
     /*Zoekbalk met plaatje*/

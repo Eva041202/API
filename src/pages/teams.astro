@@ -8,8 +8,6 @@ const pokemon = await getPokemon();
 ---
 
 <section>
-    <h1>Teams</h1>
-
     <div class="back">
         <BackButton href="/games" />
 
@@ -59,6 +57,10 @@ const pokemon = await getPokemon();
 <script src="../java/dragdrop.js"></script>
 
 <style>
+    * {
+        font-family: sans-serif;
+    }
+
     body.dark-mode {
         background: black;
     }
@@ -99,6 +101,9 @@ const pokemon = await getPokemon();
         font-size: 1rem;
         font-weight: bold;
         cursor: pointer;
+
+        color: black;
+        text-decoration: none;
     }
 
     /*Zoekbalk met plaatje*/
