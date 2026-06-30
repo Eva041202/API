@@ -1,4 +1,5 @@
 ---
+// Bronnen: Vragen + uitleg: chatgpt
 import BackButton from "../components/backButton.astro";
 import GameCards from "../components/gameCards.astro";
 import GameGrid from "../components/gameGrid.astro";
@@ -60,6 +61,7 @@ import { gameConsoles } from "../java/gameConsoles";
         display: flex;
         justify-content: center;
         align-items: center;
+        width: 90%;
         max-width: 1200px;
         margin: 2rem auto;
     }
@@ -138,5 +140,29 @@ import { gameConsoles } from "../java/gameConsoles";
         inset: 0;
         pointer-events: none;
         z-index: 9999;
+    }
+
+    /*Responsive*/
+    @media (max-width: 770px) {
+        .back {
+            flex-direction: column;
+            width: 90%;
+        }
+
+        .back :global(.back-button) {
+            position: static;
+            margin-bottom: 1rem;
+            align-self: flex-start;
+        }
+
+        .navigation {
+            width: 100%;
+            margin-left: 0;
+            flex-direction: column;
+        }
+
+        .search-box {
+            width: 100%;
+        }
     }
 </style>

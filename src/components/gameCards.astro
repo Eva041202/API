@@ -1,4 +1,5 @@
 ---
+// Bronnen: Vragen + uitleg: chatgpt
 const { game } = Astro.props;
 ---
 
@@ -32,8 +33,9 @@ const { game } = Astro.props;
     }
 
     .game-card img {
-        width: 200px;
-        height: 200px;
+        width: 100%;
+        max-width: 200px;
+        aspect-ratio: 1 / 1;
         object-fit: cover;
         align-items: center;
     }

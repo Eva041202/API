@@ -1,3 +1,4 @@
+// Bronnen: Vragen + uitleg: chatgpt
 const canvas = document.getElementById("confetti");
 
 const confetti = canvas.getContext("2d");

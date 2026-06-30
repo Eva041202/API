@@ -1,3 +1,4 @@
+// Bronnen: Vragen + uitleg: chatgpt
 const pokemonCards = document.querySelectorAll(".pokemon-card");
 
 pokemonCards.forEach(card => {

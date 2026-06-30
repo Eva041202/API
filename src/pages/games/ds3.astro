@@ -138,6 +138,8 @@ const games = pokemonGames.ds3;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 2rem;
+
+        width: 90%;
         max-width: 1000px;
         margin: 2rem auto;
     }
@@ -148,5 +150,39 @@ const games = pokemonGames.ds3;
         inset: 0;
         pointer-events: none;
         z-index: 9999;
+    }
+
+    /*Responsive*/
+    @media (max-width: 900px) {
+        .games {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    @media (max-width: 600px) {
+        .back {
+            flex-direction: column;
+            width: 90%;
+        }
+
+        .back :global(.back-button) {
+            position: static;
+            margin-bottom: 1rem;
+            align-self: flex-start;
+        }
+
+        .navigation {
+            width: 100%;
+            margin-left: 0;
+            flex-direction: column;
+        }
+
+        .search-box {
+            width: 100%;
+        }
+
+        .games {
+            grid-template-columns: 1fr;
+        }
     }
 </style>

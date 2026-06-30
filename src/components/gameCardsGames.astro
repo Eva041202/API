@@ -1,8 +1,9 @@
 ---
+// Bronnen: Vragen + uitleg: chatgpt
 const { game } = Astro.props;
 ---
 
-<a href={`/games/gameboy/${game.slug}`} class="game-card">
+<a href={`/gameboyGames/${game.slug}`} class="game-card">
     <img src={game.image.src} alt={game.name} />
 
     <div class="info-game">

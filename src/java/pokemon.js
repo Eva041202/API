@@ -1,5 +1,5 @@
 //Dit in aparte folder, zodat ik deze code kan ophalen zowel in de pokédex, als de teams.
-
+// Bronnen: Vragen + uitleg: chatgpt
 export async function getPokemon() {
     const response = await fetch("https://pokeapi.co/api/v2/pokemon?limit=151");
 

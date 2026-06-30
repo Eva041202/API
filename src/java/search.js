@@ -1,6 +1,20 @@
+// Bronnen: Vragen + uitleg: chatgpt
+
 console.log("search geladen");
 //Alle pagina's
 const pages = [
+    {
+        name: "pokedex",
+        url: "/"
+    },
+    {
+        name: "games",
+        url: "/games"
+    },
+    {
+        name: "teams",
+        url: "/teams"
+    },
     {
         name: "gameboy",
         url: "/games/gameboy"
@@ -39,367 +53,367 @@ const pages = [
     },
     {
         name: "pokemon red",
-        url: "/games/gameboy/red"
+        url: "/gameboyGames/red"
     },
     {
         name: "pokemon green",
-        url: "/games/gameboy/green"
+        url: "/gameboyGames/green"
     },
     {
         name: "pokemon blue",
-        url: "/games/gameboy/blue"
+        url: "/gameboyGames/blue"
     },
     {
         name: "pokemon yellow",
-        url: "/games/gameboy/yellow"
+        url: "/gameboyGames/yellow"
     },
     {
         name: "pokemon tcg",
-        url: "/games/gameboy/tcg"
+        url: "/gameboyGames/tcg"
     },
     {
         name: "pokemon pinball",
-        url: "/games/gameboy/pinball"
+        url: "/gameboyGames/pinball"
     },
     {
         name: "pokemon gold",
-        url: "/games/gameboy/gold"
+        url: "/gameboyGames/gold"
     },
     {
         name: "pokemon silver",
-        url: "/games/gameboy/silver"
+        url: "/gameboyGames/silver"
     },
     {
         name: "pokemon puzzle challenge",
-        url: "/games/gameboy/puzzlechallenge"
+        url: "/gameboyGames/puzzlechallenge"
     },
     {
         name: "pokemon crystal",
-        url: "/games/gameboy/crystal"
+        url: "/gameboyGames/crystal"
     },
     {
         name: "pokemon tcg2",
-        url: "/games/gameboy/tcg2"
+        url: "/gameboyGames/tcg2"
     },
     {
         name: "pokemon ruby",
-        url: "/games/gameboy/ruby"
+        url: "/gameboyGames/ruby"
     },
     {
         name: "pokemon sapphire",
-        url: "/games/gameboy/sapphire"
+        url: "/gameboyGames/sapphire"
     },
     {
         name: "pokemon fire red",
-        url: "/games/gameboy/firered"
+        url: "/gameboyGames/firered"
     },
     {
         name: "pokemon leaf green",
-        url: "/games/gameboy/leafgreen"
+        url: "/gameboyGames/leafgreen"
     },
     {
         name: "pokemon emerald",
-        url: "/games/gameboy/emerald"
+        url: "/gameboyGames/emerald"
     },
     {
-        name: "pokemon mystery dungeon red team",
-        url: "/games/gameboy/dungeonredteam"
+        name: "pokemon mystery dungeon red rescue team",
+        url: "/gameboyGames/dungeonredteam"
     },
     {
         name: "hey you pikachu",
-        url: "/games/nintendo64/heyyoupikachu"
+        url: "/nintendo64Games/heyyoupikachu"
     },
     {
         name: "pokemon stadium",
-        url: "/games/nintendo64/stadium"
+        url: "/nintendo64Games/stadium"
     },
     {
         name: "pokemon snap",
-        url: "/games/nintendo64/snap"
+        url: "/nintendo64Games/snap"
     },
     {
         name: "pokemon stadium 2",
-        url: "/games/nintendo64/stadium2"
+        url: "/nintendo64Games/stadium2"
     },
     {
         name: "pokemon puzzle league",
-        url: "/games/nintendo64/puzzleleague"
+        url: "/nintendo64Games/puzzleleague"
     },
     {
         name: "pokemon box ruby & sapphire",
-        url: "/games/gamecube/rubysapphire"
+        url: "/nintendo64Games/rubysapphire"
     },
     {
         name: "pokemon channel",
-        url: "/games/gamecube/channel"
+        url: "/gamecubeGames/channel"
     },
     {
         name: "pokemon colosseum",
-        url: "/games/gamecube/colosseum"
+        url: "/gamecubeGames/colosseum"
     },
     {
         name: "pokemon xd gale of darkness",
-        url: "/games/gamecube/galeofdarkness"
+        url: "/gamecubeGames/galeofdarkness"
     },
     {
         name: "pokemon dash",
-        url: "/games/ds/dash"
+        url: "/dsGames/dash"
     },
     {
         name: "pokemon trozei",
-        url: "/games/ds/trozei"
+        url: "/dsGames/trozei"
     },
     {
         name: "pokemon mystery dungeon blue rescue team",
-        url: "/games/ds/dungeonblueteam"
+        url: "/dsGames/dungeonblueteam"
     },
     {
         name: "pokemon ranger",
-        url: "/games/ds/ranger"
+        url: "/dsGames/ranger"
     },
     {
         name: "pokemon diamond",
-        url: "/games/ds/diamond"
+        url: "/dsGames/diamond"
     },
     {
         name: "pokemon pearl",
-        url: "/games/ds/pearl"
+        url: "/dsGames/pearl"
     },
     {
         name: "pokemon mystery explorers of darkness",
-        url: "/games/ds/explorersdarkness"
+        url: "/dsGames/explorersdarkness"
     },
     {
         name: "pokemon mystery explorers of time",
-        url: "/games/ds/explorerstime"
+        url: "/dsGames/explorerstime"
     },
     {
         name: "pokemon platinum",
-        url: "/games/ds/platinum"
+        url: "/dsGames/platinum"
     },
     {
         name: "pokemon mystery explorers of sky",
-        url: "/games/ds/explorerssky"
+        url: "/dsGames/explorerssky"
     },
     {
         name: "pokemon heartgold",
-        url: "/games/ds/heartgold"
+        url: "/dsGames/heartgold"
     },
     {
         name: "pokemon soulsilver",
-        url: "/games/ds/soulsilver"
+        url: "/dsGames/soulsilver"
     },
     {
         name: "pokemon ranger guardian signs",
-        url: "/games/ds/guardiansigns"
+        url: "/dsGames/guardiansigns"
     },
     {
         name: "pokemon black",
-        url: "/games/ds/black"
+        url: "/dsGames/black"
     },
     {
         name: "pokemon white",
-        url: "/games/ds/white"
+        url: "/dsGames/white"
     },
     {
         name: "pokemon typing adventure",
-        url: "/games/ds/typingadventure"
+        url: "/dsGames/typingadventure"
     },
     {
         name: "pokemon conquest",
-        url: "/games/ds/conquest"
+        url: "/dsGames/conquest"
     },
     {
         name: "pokemon black 2",
-        url: "/games/ds/black2"
+        url: "/dsGames/black2"
     },
     {
         name: "pokemon white 2",
-        url: "/games/ds/white"
+        url: "/dsGames/white2"
     },
     {
         name: "pokedex 3d",
-        url: "/games/ds3/pokedex3d"
+        url: "/dsGames/pokedex3d"
     },
     {
         name: "super pokemon rumble",
-        url: "/games/ds3/superrumble"
+        url: "/dsGames/superrumble"
     },
     {
         name: "pokemon dream radar",
-        url: "/games/ds3/dreamradar"
+        url: "/dsGames/dreamradar"
     },
     {
         name: "mystery dungeon gates to infinity",
-        url: "/games/ds3/gatestoinfinity"
+        url: "/dsGames/gatestoinfinity"
     },
     {
         name: "pokedex x",
-        url: "/games/ds3/x"
+        url: "/ds3Games/x"
     },
     {
         name: "pokedex y",
-        url: "/games/ds3/y"
+        url: "/ds3Games/y"
     },
     {
         name: "battle trozei",
-        url: "/games/ds3/battletrozei"
+        url: "/ds3Games/battletrozei"
     },
     {
         name: "art academy",
-        url: "/games/ds3/artacademy"
+        url: "/ds3Games/artacademy"
     },
     {
         name: "alpha sapphire",
-        url: "/games/ds3/alphasapphire"
+        url: "/ds3Games/alphasapphire"
     },
     {
         name: "omega ruby",
-        url: "/games/ds3/omegaruby"
+        url: "/ds3Games/omegaruby"
     },
     {
         name: "pokemon shuffle",
-        url: "/games/ds3/shuffle"
+        url: "/ds3Games/shuffle"
     },
     {
         name: "rumble world",
-        url: "/games/ds3/rumble world"
+        url: "/ds3Games/rumbleworld"
     },
     {
         name: "super mystery dungeon",
-        url: "/games/ds3/supermysterydungeon"
+        url: "/ds3Games/supermysterydungeon"
     },
     {
         name: "picross",
-        url: "/games/ds3/picross"
+        url: "/ds3Games/picross"
     },
     {
         name: "detective pikachu",
-        url: "/games/ds3/detectivepikachu"
+        url: "/ds3Games/detectivepikachu"
     },
     {
         name: "pokemon moon",
-        url: "/games/ds3/moon"
+        url: "/ds3Games/moon"
     },
     {
         name: "pokemon sun",
-        url: "/games/ds3/sun"
+        url: "/ds3Games/sun"
     },
     {
         name: "pokemon ultra moon",
-        url: "/games/ds3/ultramoon"
+        url: "/ds3Games/ultramoon"
     },
     {
         name: "pokemon ultra sun",
-        url: "/games/ds3/ultrasun"
+        url: "/ds3Games/ultrasun"
     },
     {
         name: "battle revolution",
-        url: "/games/wii/battlerevolution"
+        url: "/wiiGames/battlerevolution"
     },
     {
         name: "pokemon ranch",
-        url: "/games/wii/ranch"
+        url: "/wiiGames/ranch"
     },
     {
         name: "pokemon rumble",
-        url: "/games/wii/rumble"
+        url: "/wiiGames/rumble"
     },
     {
         name: "pokepark pikachu's adventure",
-        url: "/games/wii/pikachusadventure"
+        url: "/wiiGames/pikachusadventure"
     },
     {
         name: "pokepark 2 wonder beyond",
-        url: "/games/wii/pokepark2"
+        url: "/wiiGames/pokepark2"
     },
     {
         name: "rumble u",
-        url: "/games/wiiu/rumbleu"
+        url: "/wiiGames/rumbleu"
     },
     {
         name: "pokken tournament",
-        url: "/games/wiiu/pokkentournament"
+        url: "/wiiGames/pokkentournament"
     },
     {
         name: "pokken tournament dx",
-        url: "/games/switch/pokkentournamentdx"
+        url: "/switchGames/pokkentournamentdx"
     },
     {
         name: "pokemon quest",
-        url: "/games/switch/quest"
+        url: "/switchGames/quest"
     },
     {
         name: "let's go, pikachu!",
-        url: "/games/switch/letsgopikachu"
+        url: "/switchGames/letsgopikachu"
     },
     {
         name: "let's go, eevee!",
-        url: "/games/switch/letsgoeevee"
+        url: "/switchGames/letsgoeevee"
     },
     {
         name: "pokemon sword",
-        url: "/games/switch/sword"
+        url: "/switchGames/sword"
     },
     {
         name: "pokemon shield",
-        url: "/games/switch/shield"
+        url: "/switchGames/shield"
     },
     {
         name: "mystery rescue team dx",
-        url: "/games/switch/mysteryrescueteamdx"
+        url: "/switchGames/mysteryrescueteamdx"
     },
     {
         name: "pokemon cafe mix",
-        url: "/games/switch/cafemix"
+        url: "/switchGames/cafemix"
     },
     {
         name: "new pokemon snap",
-        url: "/games/switch/newsnap"
+        url: "/switchGames/newsnap"
     },
     {
         name: "pokemon brilliant diamond",
-        url: "/games/switch/brilliantdiamond"
+        url: "/switchGames/brilliantdiamond"
     },
     {
         name: "pokemon shining pearl",
-        url: "/games/switch/shiningpearl"
+        url: "/switchGames/shiningpearl"
     },
     {
         name: "pokemon legends arceus",
-        url: "/games/switch/legendsarceus"
+        url: "/switchGames/legendsarceus"
     },
     {
         name: "pokemon scarlet",
-        url: "/games/switch/scarlet"
+        url: "/switchGames/scarlet"
     },
     {
         name: "pokemon violet",
-        url: "/games/switch/violet"
+        url: "/switchGames/violet"
     },
     {
         name: "detective pikachu returns",
-        url: "/games/switch/detectivepikachureturns"
+        url: "/switchGames/detectivepikachureturns"
     },
     {
         name: "pokemon friends",
-        url: "/games/switch/friends"
+        url: "/switchGames/friends"
     },
     {
         name: "pokemon legends z-a",
-        url: "/games/switch/legendsza"
+        url: "/switchGames/legendsza"
     },
     {
         name: "pokemon legends z-a",
-        url: "/games/switch2/legendsza2"
+        url: "/switch2Games/legendsza2"
     },
     {
         name: "pokemon pokopia",
-        url: "/games/switch2/pokopia"
+        url: "/switch2Games/pokopia"
     },
     {
         name: "pokemon champions",
-        url: "/games/switch2/champions"
+        url: "/switch2Games/champions"
     }
 ];
 

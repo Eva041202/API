@@ -1,3 +1,4 @@
+// Bronnen: Vragen + uitleg: chatgpt
 import gameboy from "../assets/media/gameConsoles/pexels-wwarby-19599844.jpg"
 import nintendo64 from "../assets/media//gameConsoles/pexels-pngmariah-9281229.jpg";
 import gamecube from "../assets/media/gameConsoles/wikiimages-game-console-63063.jpg";

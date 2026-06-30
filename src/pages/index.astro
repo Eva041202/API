@@ -1,4 +1,5 @@
 ---
+// Bronnen: Vragen + uitleg: chatgpt
 //@ts-nocheck
 import ScrollImages from "../components/scroll_images.astro";
 import PokemonGrid from "../components/pokemonGrid.astro";
@@ -6,6 +7,10 @@ import { getPokemon } from "../java/pokemon";
 
 const pokemon = await getPokemon();
 ---
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
 
 <ScrollImages />
 
@@ -59,11 +64,17 @@ const pokemon = await getPokemon();
     .navigation {
         display: flex;
         justify-content: space-between;
-        width: 70%;
+        width: 90%;
         max-width: 900px;
 
         gap: 1rem;
         margin: 2rem auto;
+    }
+
+    @media (max-width:770px) {
+        .navigation {
+        flex-direction: column;
+    }
     }
 
     .navigation a, .navigation button {
@@ -90,7 +101,7 @@ const pokemon = await getPokemon();
 
     .search-box {
         position: relative;
-        width: 70%;
+        width: 90%;
         max-width: 900px;
     }
 

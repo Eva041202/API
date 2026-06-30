@@ -1,3 +1,4 @@
+// Bronnen: Vragen + uitleg: chatgpt
 import { shootConfetti } from "../java/confetti";
 
 document.querySelectorAll(".navigation a, .navigation button, .back-button").forEach(item => {
